@@ -23,6 +23,8 @@ module.exports = {
     // ignore index files
     '!**/index.ts',
   ],
+  reporters: ['default', 'jest-junit'],
+  coverageReporters: ['text-summary', 'cobertura', 'html'],
   globals: {
     'ts-jest': {
       useBabelrc: true,
