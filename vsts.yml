@@ -32,6 +32,7 @@ phases:
         inputs:
           codeCoverageTool: 'cobertura'
           summaryFileLocation: 'coverage/cobertura*.xml'
+          reportDirectory: 'coverage/'
         condition: succeededOrFailed()
 
   - phase: Linux
